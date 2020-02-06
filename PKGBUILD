@@ -1,6 +1,6 @@
 _pkgname=GPXSee
 pkgname=gpxsee
-pkgver=7.18
+pkgver=7.20
 pkgrel=1
 pkgdesc='GPS log file viewer and analyzer'
 arch=(x86_64)
@@ -13,7 +13,7 @@ optdepends=('qt5-imageformats: Support for GeoTIFF images'
             'qt5-pbfimageplugin: Support for PBF vector maps')
 conflicts=(${pkgname}-git)
 source=("https://ufpr.dl.sourceforge.net/project/gpxsee/Source/GPXSee-${pkgver}.tar.gz")
-md5sums=('b7b9664c8a2bfa38b797c23445c5607f')
+md5sums=('1db4614927b4fcb7175cefda12aee456')
 
 build() {
   cd ${srcdir}/${_pkgname}-${pkgver}
