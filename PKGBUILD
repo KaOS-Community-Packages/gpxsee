@@ -15,6 +15,7 @@ conflicts=(${pkgname}-git)
 source=("https://ufpr.dl.sourceforge.net/project/gpxsee/Source/GPXSee-${pkgver}.tar.gz")
 md5sums=('4c1ba8939e569c6503b510b54dfa7e3e')
 
+
 build() {
   cd ${srcdir}/${_pkgname}-${pkgver}
   msg "### configure"
@@ -23,6 +24,7 @@ build() {
   msg "### make"
   make
 }
+
 
 package() {
   cd ${srcdir}/${_pkgname}-${pkgver}
